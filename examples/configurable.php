@@ -21,7 +21,7 @@ class Page implements Configurable, Extensible
      *
      * @return array
      */
-    public function onConfig(array $config)
+    public function onConfig(array $config = [])
     {
         return [
             "cache" => 5,
@@ -42,7 +42,7 @@ final class PageExtension implements Configurable, Extension
      *
      * @return array
      */
-    public function onConfig(array $config)
+    public function onConfig(array $config = [])
     {
         return [
             "widgets" => true,
