@@ -1,0 +1,22 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Glitch\\": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Glitch\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^5.6|^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.1",
+    "mockery/mockery": "^0.9.4"
+  }
+}
