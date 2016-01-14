@@ -22,7 +22,7 @@ class Product implements Extensible
     public function render()
     {
         $markup = "<h1>{$this->title}</h1>";
-        $markup = $this->extend("onMarkup", $markup);
+        $markup = $this->extend("onRender", $markup);
 
         return $markup;
     }
@@ -43,7 +43,7 @@ final class ProductExtension implements Extension
      *
      * @return string
      */
-    public function onMarkup($caller, $markup)
+    public function onRender($caller, $markup)
     {
         if (!stristr($markup, "Price")) {
             $markup .= "<p>Price: {$this->price}</p>";
