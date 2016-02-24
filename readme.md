@@ -37,7 +37,7 @@ class ProductRenderExtension implements Extension
 }
 ```
 
-This leads to make architectural considerations:
+This leads to some architectural considerations:
 
 - How do I apply multiple extensions?
 - How does the state move between them?
